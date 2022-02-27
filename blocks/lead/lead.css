@@ -84,4 +84,7 @@
     font-size: 16px;
     line-height: 1.25;
   }
+  .lead__caption {
+    padding-left: 16px;
+  }
 }
