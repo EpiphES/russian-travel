@@ -1,6 +1,5 @@
 .lead {
-  padding-top: 48px;
-  max-width: 928px;
+  padding: 48px 48px 0;
 
   display: flex;
   flex-direction: column;
@@ -31,9 +30,13 @@
   text-align: center;
 }
 
+.lead__figure {
+  margin: 0;
+}
+
 .lead__image {
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .lead__caption {
@@ -50,22 +53,25 @@
 
 @media screen and (min-width: 1280px) {
   .lead {
-    max-width: 984px;
-    padding-top: 56px;
+    padding: 56px 148px 0;
   }
   .lead__subtitle {
     margin-bottom: 64px;
   }
 }
 
-@media screen and (max-width: 976px) {
+@media screen and (max-width: 768px) {
+  .lead {
+    padding-left: 0;
+    padding-right: 0;
+  }
   .lead__caption {
     padding-left: 24px;
   }
 
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 720px) {
   .lead__title {
     max-width: 288px;
     margin-bottom: 16px;

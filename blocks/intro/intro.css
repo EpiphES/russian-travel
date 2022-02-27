@@ -1,6 +1,8 @@
 .intro {
-  padding: 92px 0;
-  padding-left: calc((100% - 928px)/2);
+  max-width: 690px;
+  padding-top: 92px;
+  padding-left: 48px;
+  padding-bottom: 92px;
   align-self: flex-start;
 }
 
@@ -15,7 +17,7 @@
 }
 
 .intro__text {
-  max-width: 690px;
+
   margin: 0;
   margin-bottom: 33px;
   font-style: normal;
@@ -28,16 +30,20 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  font-weight: 700;
   font-size: 12px;
   line-height: 1.5;
 }
+
+.intro__span-bold {
+  font-weight: 700;
+}
+
 @media screen and (min-width: 1280px) {
   .intro {
-    padding-left: calc((100% - 984px)/2);
+    padding-left: 148px;
   }
 }
-@media screen and (max-width: 976px) {
+@media screen and (max-width: 768px) {
   .intro {
     width: 100%;
     padding: 88px 24px;
@@ -47,7 +53,7 @@
 
 @media screen and (max-width: 425px) {
   .intro {
-    padding: 64px 16px 0;
+    padding: 64px 16px;
   }
   .intro__title {
     font-size: 32px;

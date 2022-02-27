@@ -12,7 +12,11 @@
       <header class="header">
         <a href="#" class="header__logo"></a>
         <ul class="header__lang-links">
-          <li><a href="#" class="header__lang-link">Ru</a></li>
+          <li>
+            <a href="#" class="header__lang-link header__lang-link_active"
+              >Ru</a
+            >
+          </li>
           <li><a href="#" class="header__lang-link">Eng</a></li>
         </ul>
       </header>
@@ -24,8 +28,10 @@
           <p class="lead__subtitle">
             Настоящая страна не в выпусках новостей, а здесь.
           </p>
-          <img src="./images/lead-polka.jpg" alt="" class="lead__image" />
-          <p class="lead__caption">ваша полка — верхняя</p>
+          <figure class="lead__figure">
+            <img src="./images/lead-polka.jpg" alt="" class="lead__image" />
+            <figcaption class="lead__caption">ваша полка — верхняя</figcaption>
+          </figure>
         </section>
         <!-- Intro -->
         <section class="intro">
@@ -43,11 +49,111 @@
             вашего отпуска.
           </p>
           <ul class="intro__list">
-            <li>Часовых поясов 11</li>
-            <li>Объектов природного наследия ЮНЕСКО 12</li>
-            <li>Объектов культурного наследия ЮНЕСКО 16</li>
-            <li>Природных заповедников 105</li>
-            <li>Аэропортов 241</li>
+            <li><span class="intro__span-bold">Часовых поясов</span> 11</li>
+            <li>
+              <span class="intro__span-bold"
+                >Объектов природного наследия ЮНЕСКО</span
+              >
+              12
+            </li>
+            <li>
+              <span class="intro__span-bold"
+                >Объектов культурного наследия ЮНЕСКО</span
+              >
+              16
+            </li>
+            <li>
+              <span class="intro__span-bold">Природных заповедников</span> 105
+            </li>
+            <li><span class="intro__span-bold">Аэропортов</span> 241</li>
+          </ul>
+        </section>
+        <section class="photo-grid">
+          <ul class="photo-grid__list">
+            <li>
+              <img
+                src="./images/photo-grid-train.jpg"
+                alt="Вид из окна поезда"
+                class="photo-grid__item"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/photo-grid-atharva-tulsi.jpg"
+                alt="Горы в облаках"
+                class="photo-grid__item"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/photo-grid-tuman.jpg"
+                alt="Собака на стоге сена в тумане"
+                class="photo-grid__item"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/photo-grid-sochi.jpg"
+                alt="Лес в тумане"
+                class="photo-grid__item"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/photo-grid-arisa.jpg"
+                alt="Автомобиль едет по льду озера"
+                class="photo-grid__item"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/photo-grid-baikal.jpg"
+                alt="Берек Байкала"
+                class="photo-grid__item"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/photo-grid-elbrus.jpg"
+                alt="Гора Эльбрус"
+                class="photo-grid__item"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/photo-grid-kondratiev.jpg"
+                alt="Знак пешеходного перехода на фоне бетонных блоков на морском берегу"
+                class="photo-grid__item"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/photo-grid-kamchatka-1.jpg"
+                alt="Камчатка. Пейзаж в тумане"
+                class="photo-grid__item"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/photo-grid-kamchatka-2.jpg"
+                alt="Вулкан Камчатки"
+                class="photo-grid__item"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/photo-grid-baikal-2.jpg"
+                alt="Скала на берегу Байкала"
+                class="photo-grid__item"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/photo-grid-ergaki.jpg"
+                alt="Ергаки.Гора Парабола в тумане"
+                class="photo-grid__item"
+              />
+            </li>
           </ul>
         </section>
       </main>
