@@ -47,7 +47,7 @@
   .intro {
     width: 100%;
     padding: 88px 24px;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
   }
 }
 
