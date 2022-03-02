@@ -1,113 +1,24 @@
 .places {
   width: 100%;
+  margin: 0;
   padding: 92px 48px;
+  list-style: none;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   row-gap: 80px;
 }
 
-.place {
-  width: 100%;
-  display: grid;
-  grid-template-columns: min-content auto;
-  grid-auto-rows: auto;
-  grid-auto-flow: row;
-  gap: 48px 32px;
-}
-
-.place__title {
-  margin: 0;
-
-  font-weight: 900;
-  font-size: 72px;
-  line-height: 1.06;
-}
-
-.place__website {
-  align-self: end;
-}
-
-.place__url-heading {
-  margin: 0;
-  margin-bottom: 12px;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 1.7;
-  letter-spacing: 2px;
-  color: #aaa;
-}
-
-.place__link {
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 1.22;
-  color: #fff;
-  transition: opacity 0.5s ease;
-}
-
-.place__link:hover {
-  opacity: 0.8;
-}
-
-.place__image {
-  max-width: 440px;
-}
-
-.place__text {
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 1.63;
-}
-
-.place__paragraph {
-  margin: 0;
-  margin-bottom: 27px;
-}
-
-.place__paragraph:last-child {
-  margin-bottom: 0;
-}
-
 @media screen and (min-width: 1280px) {
   .places {
     padding: 92px 148px;
-  }
-  .place {
-    column-gap: 40px;
-  }
-  .place__image {
-    max-width: 460px;
-  }
-}
-
-@media screen and (max-width: 975px) {
-  .place__image {
-    max-width: 340px;
-  }
-  .place__title {
-    font-size: 42px;
-    line-height: 1.1;
   }
 }
 
 @media screen and (max-width: 768px) {
   .places {
     padding: 88px 24px 90px;
-    row-gap: 72px;
-  }
-  .place {
-    column-gap: 28px;
-  }
-}
-
-@media screen and (max-width: 650px) {
-  .place {
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  }
-
-  .place__image {
-    max-width: 100%;
+    row-gap: 65px;
   }
 }
 
@@ -115,21 +26,5 @@
   .places {
     padding: 64px 0 66px;
     row-gap: 50px;
-  }
-  .place {
-    row-gap: 32px;
-  }
-  .place__title {
-    padding: 0 16px;
-    font-size: 32px;
-    line-height: 1.09;
-  }
-  .place__website {
-    padding: 0 16px;
-  }
-  .place__text {
-    padding: 0 16px;
-    font-size: 16px;
-    line-height: 163%;
   }
 }
